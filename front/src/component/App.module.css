@@ -1,0 +1,21 @@
+.App {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.App__HelpPart {
+    display: none;
+    border-right: 1px solid #DDD;
+}
+
+@media (min-width: 640px) {
+  .App__HelpPart {
+    display: block;
+    width: 15rem;
+  }
+}
+
+.App__MainPart {
+    flex: 1;
+}

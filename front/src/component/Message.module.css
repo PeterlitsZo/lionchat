@@ -1,0 +1,23 @@
+.Message {
+    display: flex;
+    flex-direction: column;
+}
+
+.Message__Header {
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #DDD;
+    background-color: #F5F5F5;
+}
+
+.Message__History {
+    padding: 0.5rem;
+    flex: 1;
+}
+
+.Message__TextInputTool {
+    padding: 0.5rem;
+    border-top: 1px solid #DDD;
+    background-color: #F5F5F5;
+}
+

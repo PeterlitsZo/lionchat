@@ -1,0 +1,13 @@
+.UserStat {
+    background-color: #EEE;
+}
+
+.UserStat__UserCounter {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #DDD;
+}
+
+.UserStat__UserList {
+    padding: 0.5rem;
+}
