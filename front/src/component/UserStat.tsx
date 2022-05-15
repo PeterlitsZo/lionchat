@@ -6,20 +6,20 @@ import styles from './UserStat.module.css';
 
 type UserStatProp = {
   // An array of user name.
-  userList: () => string[];
+  userSet: () => Set<string>;
   class?: string;
 };
 
 const UserStat: Component<UserStatProp> = (props: UserStatProp) => {
-  const { userList, class: className } = props;
+  const { userSet, class: className } = props;
 
   return (
     <div class={classNames(className, styles.UserStat)}>
       <h2 class={styles.UserStat__UserCounter}>
-        当前在线用户数：{userList().length}
+        当前在线用户数：{userSet().size}
       </h2>
       <div class={styles.UserStat__UserList}>
-        <For each={userList()}>{
+        <For each={Array.from(userSet())}>{
           (user) => (<p>{user}</p>)
         }</For>
       </div>

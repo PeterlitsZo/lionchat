@@ -11,8 +11,17 @@
 }
 
 .Message__History {
+    overflow: auto;
     padding: 0.5rem;
     flex: 1;
+}
+
+.Message__History__Name {
+    font-weight: 700;
+}
+
+.Message__History__Message {
+    padding-left: 1rem;
 }
 
 .Message__TextInputTool {
